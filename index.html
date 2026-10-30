@@ -2514,26 +2514,26 @@
             : "smooth",
         });
       }
-      $("sound-button").addEventListener("click", async () => {
-        soundEnabled = !soundEnabled;
-        if (soundEnabled) {
-          effectContext ||= new (
-            window.AudioContext || window.webkitAudioContext
-          )();
-          await effectContext.resume();
-          playEffect("sparkle");
-        }
-        $("sound-button").setAttribute("aria-pressed", String(soundEnabled));
-        $("sound-button").setAttribute(
-          "aria-label",
-          soundEnabled
-            ? "Turn gentle sound effects off"
-            : "Turn gentle sound effects on",
-        );
-        $("sound-label").textContent = soundEnabled
-          ? "♡ sounds on"
-          : "♡ sounds off";
-      });
+      // $("sound-button").addEventListener("click", async () => {
+      //   soundEnabled = !soundEnabled;
+      //   if (soundEnabled) {
+      //     effectContext ||= new (
+      //       window.AudioContext || window.webkitAudioContext
+      //     )();
+      //     await effectContext.resume();
+      //     playEffect("sparkle");
+      //   }
+      //   $("sound-button").setAttribute("aria-pressed", String(soundEnabled));
+      //   $("sound-button").setAttribute(
+      //     "aria-label",
+      //     soundEnabled
+      //       ? "Turn gentle sound effects off"
+      //       : "Turn gentle sound effects on",
+      //   );
+      //   $("sound-label").textContent = soundEnabled
+      //     ? "♡ sounds on"
+      //     : "♡ sounds off";
+      // });
       const musicPopup = $("music-popup"),
         discPlay = $("disc-play"),
         popupStatus = $("music-popup-status"),
