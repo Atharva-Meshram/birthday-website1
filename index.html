@@ -452,27 +452,37 @@
         color: #8a7180;
         font-size: 12px;
       }
+      
       .letter-card {
         background: var(--cream);
         border: 1px solid #e8d5cf;
         border-radius: 24px;
         box-shadow: 0 18px 55px #8e67701b;
-        padding: clamp(24px, 5vw, 70px);
-        max-width: 790px;
+      
+        /* Improved width and padding */
+        width: 100%;
+        max-width: 960px;
+        padding: clamp(24px, 4vw, 42px);
+      
         margin: auto;
         min-height: 610px;
         animation: rise 0.45s both;
       }
+      
       .letter-card p {
         font-size: clamp(16px, 2.4vw, 18px);
-        line-height: 1.87;
-        margin: 0 0 1.35em;
-        white-space: pre-wrap;
+        line-height: 1.65;
+        margin: 0 0 1em;
+      
+        /* Allow text to wrap naturally */
+        white-space: normal;
         overflow-wrap: break-word;
       }
+      
       .letter-card p:last-of-type {
         margin-bottom: 0;
       }
+
       .letter-footer {
         border-top: 1px solid #e9d8d1;
         margin-top: 42px;
@@ -1627,7 +1637,7 @@
               >
                 Find a cosy spot. Take your time. ♡
               </p>
-              <p class="music-note" aria-label="Optional song status">
+              <!-- <p class="music-note" aria-label="Optional song status">
                 ♡ song can be added after an audio file is uploaded
               </p>
               <button
@@ -1638,7 +1648,7 @@
                 aria-label="Turn gentle sound effects on"
               >
                 <span id="sound-label">♡ sounds off</span>
-              </button>
+              </button> -->
             </div>
             <article
               class="letter-card"
@@ -2227,7 +2237,7 @@
                 class="canva-image gift-image"
                 loading="lazy"
                 hidden=""
-                src="Assets/gift-image.jpg"
+                src="Assets/friendship-1.jpg"
                 alt="Friends laughing together"
               />
             </div>
